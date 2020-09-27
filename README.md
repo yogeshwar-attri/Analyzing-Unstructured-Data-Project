@@ -20,3 +20,41 @@
 
 >![](image/2.jpg)
 
+#### Inactive listings Scrapper
+
+>![](image/3.jpg)
+
+#### Inactive Listings Flagger
+
+>![](image/4.jpg)
+
+### Lean Product Search System
+
+>For our Lean Search System, we followed a similar workflow, whereby we started off with a scrapper that collects raw data. We then performed normalization in the form of tokenization, lemmatization, and removal of stop words. We then created an algorithm that performs topic modeling that takes in the user’s search term as an input. The model then generates keywords from the search and fetches a list of top 5 listings based on an assigned weight to similar ads based on pre-determined keywords.
+
+>Our solution improves on Craigslist’s traditional search system that is usually text-based to our solution that is keyword-based, where instead of searching from sentence to sentence, we search on word for word basis. This system is beneficial since the search criteria are much smaller this way, we can expect to reduce computational workload, hence the name Lean Search System.
+
+>We performed a trial run on a dataset of ~3000 vehicle deals, based on 5 specific keywords and the tool generated five closest URLs related to the keywords
+
+#### Lean Product Search System Scrapper
+
+>![](image/5.jpg)
+
+#### Lean Product Search System Code
+
+>![](image/6.jpg)
+
+>![](image/7.jpg)
+
+#### Output based on Lean Product Search System Code
+
+>![](image/8.jpg)
+
+>![](image/9.jpg)
+
+### Resolving Misclassified Advertisements
+
+>Out of these 6 models we trained do identify misclassified ads, we learned that that SVM is the best performing model. For this use, SVM yielded a test-set accuracy of 83.33%, giving it a marginally better performance than a simple Logit model with 82.27% test-set accuracy and a sophisticated Deep Neural Network with 4 hidden layers that yielded 82.62% test-set accuracy.
+
+>Bearing in mind the cost-performance trade-off, SVM is a perfect solution for Craigslist’s problem, given its computationally savvy nature. This means that the improved users experience that may come from this. 
+
